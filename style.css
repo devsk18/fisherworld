@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#landing_page{
+    position: relative;
+    background-color: #273036;
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+nav{
+    background-color: #273036;
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+#navbtn{
+    font-size: x-large;
+    color: #fff;
+}
+.nav-link{
+    font-weight: bolder;
+    color: #fff;
+}
+.navbar-brand:hover,.nav-link:hover{
+   color: #fff;
+}
+.text{
+    margin-top: 15rem;
+}
+.fishimg{
+    position: relative;
+    top: -25vh;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+.wave::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/wave.svg) repeat-x;
+    background-size: cover;
+    background-position: -1000px 0;
+    opacity: .2;
+    animation: waveone 60s linear infinite;
+}
+@keyframes waveone{
+    50%{
+        background-position: 0 0;
+    }
+}
+.wave::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/wave.svg) repeat-x;
+    background-size: cover;
+    background-position: 2732px 0;
+    opacity: .3;
+    animation: waveone 120s linear infinite;
+}
+.custom-shape-divider-bottom-1621601070 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+
+/* video section starts */
+
+.video-container .caption {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    background-color: black;
+    opacity: .5;
+    height: 30vh;
+    padding-top: 20px;
+  }
+  .video-container {
+    height: 30vh;
+    width: 100%;
+    position: relative;
+}
+
+.video-container video{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+
+
+
+/* product section starts */
+.product{
+    background-color: #273036;
+}
+/* gallery section starts */
+.gal-img:hover{
+    
+}
+

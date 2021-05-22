@@ -1,0 +1,4 @@
+dark :- #273036
+main :- #5000CA
+text :- #fff
+border :- #0099FF
