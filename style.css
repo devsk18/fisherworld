@@ -32,18 +32,28 @@ nav{
     color: #fff;
 }
 .nav-link{
-    font-weight: bolder;
+    font-weight: normal;
     color: #fff;
 }
 .navbar-brand:hover,.nav-link:hover{
    color: #fff;
 }
 .text{
-    margin-top: 15rem;
+    margin-top: 6rem;
+}
+#contact-btn{
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+}
+#contact-btn:hover{
+    background-color: #5000CA;
+    /* transition: ease all 1s; */
 }
 .fishimg{
     position: relative;
-    top: -25vh;
+    top: -20vh;
+    left: 50px;
     filter: drop-shadow(5px 5px 5px #222);
 }
 .wave::before{
@@ -119,7 +129,91 @@ nav{
     background-color: #273036;
 }
 /* gallery section starts */
-.gal-img:hover{
+/* .gal-img:hover{
     
+} */
+
+/* back to top btn */
+#button {
+    display: inline-block;
+    background-color: #5000CA;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button ion-icon{
+    color: #fff;
+    text-align: center;
+    font-size: x-large;
+    transform: rotate(270deg);
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Styles for the content section */
+  
+  @media (min-width: 500px) {
+    #button {
+      margin: 30px;
+    }
+  }
+
+  .contact-icons{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #5000CA;
+  }
+
+  .card{
+      display: flex;
+      justify-content: space-between;
+      border: none;
+  }
+  .card-body{
+      border: 1px solid #5000CA;
+  }
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background: #273036;
+    text-decoration: none;
+    color: #fff;
+}
+.social-icons a{
+    text-decoration: none;
+}
+.social-icons a:nth-child(1){
+    color:#0099FF;
+}
+.social-icons a:nth-child(2){
+    color:#E1306C;
+}
+.social-icons a:nth-child(3){
+    color:#1DA1F2;
+}
+.social-icons a:nth-child(4){
+    color:#2867B2;
 }
 
+#link{
+    color:#0099FF;
+}

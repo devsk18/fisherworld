@@ -9,6 +9,15 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GES2ETHKM4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GES2ETHKM4');
+  </script>
 </head>
 
 <body>
@@ -42,16 +51,20 @@
       </nav>
 
       <div class="text px-3">
-        <div class="col">
+        <div class="col animate__animated animate__slideInLeft">
           <h1>Welcome Fisher Freak</h1>
         </div>
         <div class="row mt-3 p-3">
-          <div class="col-sm-12 col-lg-6">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga atque libero deserunt dolorum, nobis maxime
-            dolores omnis ipsum hic aspernatur corporis vel odio? Incidunt ad suscipit quaerat pariatur veritatis sequi?
+          <div class="col-sm-12 col-lg-6 animate__animated animate__slideInLeft">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga atque libero deserunt dolorum, nobis maxime
+              dolores omnis ipsum hic aspernatur corporis vel odio? Incidunt ad suscipit quaerat pariatur veritatis
+              sequi?
+            </p>
+            <a href="#contact" class="btn p-2 rounded" id="contact-btn">Contact Us</a>
           </div>
           <div class="d-none d-lg-block col-lg-6 fishimg">
-            <img src="img/fish.png" class="img fluid ml-5">
+            <img src="img/fish.png" class="img-fluid ml-5 animate__animated animate__fadeInRight animate__delay-1s">
           </div>
         </div>
       </div>
@@ -72,7 +85,7 @@
 
     <section id="product">
       <div class="container-fluid">
-        <div class="row justify-content-center p-5 my-5">
+        <div class="row justify-content-center p-5 my-5 animate__animated" id="product-box">
           <div class="col-md-3 m-2 product">
             <div class="col p-3 pt-4 justify-content-center">
               <img src="img/fish.jpg" class="img-fluid">
@@ -152,15 +165,21 @@
                 <h2 style="font-weight: bolder;">Lorem ipsum dolor sit.</h2>
                 <br>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga atque libero deserunt dolorum, nobis maxime
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga atque libero deserunt dolorum, nobis maxime
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga atque libero deserunt dolorum, nobis maxime
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga atque libero deserunt dolorum, nobis
+                  maxime
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga atque libero deserunt dolorum, nobis
+                  maxime
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga atque libero deserunt dolorum, nobis
+                  maxime
                 </p>
                 <br>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga atque libero deserunt dolorum, nobis maxime
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga atque libero deserunt dolorum, nobis maxime
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga atque libero deserunt dolorum, nobis maxime
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga atque libero deserunt dolorum, nobis
+                  maxime
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga atque libero deserunt dolorum, nobis
+                  maxime
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga atque libero deserunt dolorum, nobis
+                  maxime
                 </p>
               </div>
               <div class="col-12 col-lg-4 d-none d-lg-block">
@@ -168,13 +187,67 @@
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </section>
 
+    <section id="contact" class="mt-5">
+      <div class="container px-5">
+        <h2 class="text-center mb-5" style="font-weight: bolder;">Contact Us</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 card text-center mt-4">
+            <div class="card-body">
+              <ion-icon name="location-outline" class="contact-icons"></ion-icon>
+              <h5 class="contact-text">Los Angeles, California</h5>
+            </div>
+          </div>
+          <div class="col-lg-6 card text-center mt-4">
+            <div class="card-body">
+              <ion-icon name="mail-outline" class="contact-icons"></ion-icon>
+              <h5 class="contact-text">example@gmail.com</h5>
+            </div>
+          </div>
+          <div class="col-lg-6 card text-center mt-4">
+            <div class="card-body">
+              <ion-icon name="call-outline" class="contact-icons"></ion-icon>
+              <h5 class="contact-text">(405) 726-9019</h5>
+            </div>
+          </div>
+          <div class="col-lg-6 card text-center mt-4">
+            <div class="card-body">
+              <ion-icon name="share-social-outline" class="contact-icons"></ion-icon>
+              <h5 class="social-icons">
+                <a href="#">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </h5>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="footer pt-3 mt-5 text-center">
+      <h6>All Copyrights <a id="link" href="https://devsk18.github.io/samkthampan">@ Sam k Thampan</a> | 2021</h6>
+    </div>
 
   </div>
+
+  <!-- Back to top button -->
+  <a id="button">
+    <ion-icon class="justify-content-center mt-2" name="fish-outline"></ion-icon>
+  </a>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -186,6 +259,42 @@
     crossorigin="anonymous"></script>
   <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
+  <script>
+    var btn = $('#button');
+    var navbtn = $('#navbtn');
+    var flag = 0;
+
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+        if (flag == 1) {
+          navbtn.click()
+        }
+      } else {
+        btn.removeClass('show');
+      }
+    });
+
+    btn.on('click', function (e) {
+      e.preventDefault();
+      window.scroll(top);
+    });
+
+    navbtn.on('click', function (e) {
+      e.preventDefault();
+      if (flag == 1) {
+        flag = 0
+      } else {
+        flag = 1;
+      }
+    });
+
+
+
+
+
+
+  </script>
 </body>
 
 </html>
